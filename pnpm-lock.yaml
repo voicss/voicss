@@ -24,8 +24,8 @@ importers:
         specifier: ^2.6.1
         version: 2.6.1
       relion:
-        specifier: ^0.39.2
-        version: 0.39.2
+        specifier: ^0.42.1
+        version: 0.42.1
       tsdown:
         specifier: 0.20.3
         version: 0.20.3(typescript@5.9.3)
@@ -1661,8 +1661,8 @@ packages:
     resolution: {integrity: sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==}
     engines: {node: '>=0.10.0'}
 
-  relion@0.39.2:
-    resolution: {integrity: sha512-/yqRnSE5entRBmXLcfeb8dU2rJPUV+kxCimkd/CQKPhneLXLI0FmEZXgGpb3azeFcJ6qYvdNlHND+NiOX9sI4Q==}
+  relion@0.42.1:
+    resolution: {integrity: sha512-Y8cm0b8lMTdzl3jcRsr2n8axiC0J0L1zUh9RgGa0nMdFkkcR3A2mkcjVpbPDr8vvJXWt2MBUduLiyA+UVHufoA==}
     hasBin: true
 
   resolve-pkg-maps@1.0.0:
@@ -3164,7 +3164,7 @@ snapshots:
 
   react@19.2.4: {}
 
-  relion@0.39.2:
+  relion@0.42.1:
     dependencies:
       semver: 7.7.4
 
