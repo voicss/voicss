@@ -1,7 +1,7 @@
 {
 	"name": "@rawstyle/next",
 	"version": "0.4.0",
-	"description": "🔌 Rawstyle Turbopack loader for Next.js",
+	"description": "🔌 Rawstyle Turbopack loader",
 	"author": "kh4f <kh4f.dev@gmail.com>",
 	"license": "MIT",
 	"repository": "https://github.com/rawstylecss/rawstyle",
