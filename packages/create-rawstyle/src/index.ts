@@ -1,6 +1,6 @@
 import { intro, select, spinner, text, outro } from '@clack/prompts'
 import { downloadTemplate } from 'giget'
-import { handleCancel, resolveLinkedDeps } from '@/utils'
+import { handleCancel, resolveLinkedDeps } from './utils'
 
 void (async () => {
 	console.log()

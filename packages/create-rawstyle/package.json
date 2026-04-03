@@ -1,6 +1,6 @@
 {
 	"name": "create-rawstyle",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "🚀 Rawstyle project generator",
 	"author": "kh4f <kh4f.dev@gmail.com>",
 	"license": "MIT",
@@ -8,7 +8,6 @@
 	"bugs": "https://github.com/rawstylecss/rawstyle/issues",
 	"homepage": "https://github.com/rawstylecss/rawstyle#readme",
 	"keywords": ["rawstyle", "create-rawstyle", "css-in-js"],
-	"relion": { "tagPrefix": "create-rawstyle@" },
 	"files": ["dist"],
 	"bin": "dist/index.js",
 	"type": "module",
@@ -17,7 +16,7 @@
 		"build:watch": "tsdown --watch",
 		"build:prod": "tsdown --prod",
 		"lint": "eslint",
-		"release": "relion"
+		"release": "bunx relion -t create-rawstyle@"
 	},
 	"dependencies": {
 		"@clack/prompts": "^1.1.0",

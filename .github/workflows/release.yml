@@ -4,7 +4,6 @@ on: { push: { tags: '**@[0-9]+.[0-9]+.[0-9]+*' } }
 
 jobs:
   release:
-    name: Release & Publish
     runs-on: ubuntu-latest
     permissions:
       contents: write # for creating a GitHub release
@@ -14,15 +13,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-        with: { ref: 'main' } # attach HEAD to 'main'
-
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v4
-        with: { version: latest }
 
       - name: Set up Node.js
         uses: actions/setup-node@v6
-        with: { node-version: latest, cache: pnpm, registry-url: https://registry.npmjs.org }
+        with: { node-version: latest, registry-url: https://registry.npmjs.org }
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
 
       - name: Set env variables
         run: |
@@ -30,38 +27,34 @@ jobs:
           PACKAGE=${BASH_REMATCH[1]}
           DIR=${BASH_REMATCH[3]}
           VERSION=${BASH_REMATCH[4]}
-          ARCHIVE=${PACKAGE/@rawstyle\//rawstyle-}-v$VERSION.zip
-          echo -e "DIR=$DIR\nPACKAGE=$PACKAGE\nVERSION=$VERSION\nARCHIVE=$ARCHIVE" >> $GITHUB_ENV
+          ZIP=${PACKAGE/@rawstyle\//rawstyle-}-v$VERSION.zip
+          echo -e "DIR=$DIR\nPACKAGE=$PACKAGE\nVERSION=$VERSION\nZIP=$ZIP" >> $GITHUB_ENV
 
       - name: Install deps
-        run: pnpm install
+        run: bun i
 
       - name: Build
-        run: pnpm build:prod
+        run: bun build:prod
 
       - name: Test
-        run: pnpm test
+        run: bun run test
 
       - name: Lint
-        working-directory: packages/${{ env.DIR }}
-        run: pnpm lint
+        run: bun lint
 
-      - name: Create release archive
+      - name: Create ZIP
         working-directory: packages/${{ env.DIR }}
         run: |
           cp ../../LICENSE .
-          zip -r $ARCHIVE dist package.json LICENSE \
+          zip -r $ZIP dist package.json LICENSE \
             $([[ $DIR == "rawstyle" ]] && cp ../../README.md . && echo README.md || true)
           rm -f LICENSE README.md
 
       - name: Publish to npm
-        working-directory: packages/${{ env.DIR }}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm publish --access public --provenance
+        run: npm publish --access public
 
       - name: Create GitHub release
         working-directory: packages/${{ env.DIR }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release create $TAG --title $TAG --draft $ARCHIVE
+        run: gh release create $TAG --title $TAG --draft $ZIP

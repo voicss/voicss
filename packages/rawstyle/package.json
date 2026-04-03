@@ -8,7 +8,6 @@
 	"bugs": "https://github.com/rawstylecss/rawstyle/issues",
 	"homepage": "https://github.com/rawstylecss/rawstyle#readme",
 	"keywords": ["rawstyle", "rawstyle-core", "css-in-js"],
-	"relion": { "tagPrefix": "rawstyle@" },
 	"files": ["dist", "README.md"],
 	"type": "module",
 	"exports": {
@@ -21,8 +20,8 @@
 		"build:watch": "tsdown --watch",
 		"build:prod": "tsdown --prod",
 		"lint": "eslint",
-		"test": "vitest",
-		"release": "relion",
+		"test": "bun test",
+		"release": "bunx relion -t rawstyle@",
 		"prepack": "cp ../../README.md .",
 		"postpack": "rm README.md"
 	},

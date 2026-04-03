@@ -3,7 +3,7 @@
 		"moduleResolution": "bundler",
 		"verbatimModuleSyntax": true,
 		"moduleDetection": "force",
-		"paths": { "@/*": ["./src/*"] },
+		"types": ["bun"],
 	},
 	"include": ["**/*.ts"]
 }

@@ -1,7 +1,6 @@
 import type { Plugin } from 'rolldown-vite'
 import { TRANSFORMABLE_EXT, VIRTUAL_PREFIX, RESOLVED_PREFIX } from 'rawstyle'
 import { transform } from 'rawstyle/transformer'
-import { normalizePath } from '@/utils'
 
 const styles = new Map<string, string>()
 
@@ -42,3 +41,5 @@ export default (): Plugin => ({
 		if (mod) return [...modules, mod]
 	},
 })
+
+const normalizePath = (path: string) => path.replace(/\\/g, '/')
