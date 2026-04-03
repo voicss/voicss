@@ -1,12 +1,10 @@
 {
 	"compilerOptions": {
-		"target": "esnext",
-		"module": "esnext",
 		"moduleResolution": "bundler",
-		"noEmit": true,
-		"strict": true,
 		"verbatimModuleSyntax": true,
 		"moduleDetection": "force",
+		"esModuleInterop": true,
+    	"resolveJsonModule": true,
 		"jsx": "react-jsx",
 		"paths": { "@/*": ["./src/*"] },
 		"types": ["rawstyle/globals"]
