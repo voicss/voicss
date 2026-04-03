@@ -32,7 +32,7 @@
 		"next-dont": "^0.1.4",
 		"rawstyle": "../../packages/rawstyle",
 		"rawstyle-eslint": "^0.1.2",
-		"typescript": "^5.9.3",
+		"typescript": "^6.0.2",
 		"typescript-eslint": "^8.58.0"
 	}
 }

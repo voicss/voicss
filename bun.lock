@@ -39,7 +39,7 @@
         "next-dont": "^0.1.4",
         "rawstyle": "../../packages/rawstyle",
         "rawstyle-eslint": "^0.1.2",
-        "typescript": "^5.9.3",
+        "typescript": "^6.0.2",
         "typescript-eslint": "^8.58.0",
       },
     },
@@ -67,7 +67,7 @@
         "rawstyle": "../../packages/rawstyle",
         "rawstyle-eslint": "^0.1.2",
         "rolldown-vite": "^7.3.1",
-        "typescript": "^5.9.3",
+        "typescript": "^6.0.2",
         "typescript-eslint": "^8.58.0",
       },
     },
@@ -1100,13 +1100,9 @@
 
     "rawstyle-next-example/rawstyle": ["rawstyle@file:packages/rawstyle", { "dependencies": { "@oxc-parser/binding-wasm32-wasi": "^0.115.0", "oxc-parser": "^0.115.0" } }],
 
-    "rawstyle-next-example/typescript": ["typescript@5.9.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="],
-
     "rawstyle-vite-example/@rawstyle/vite": ["@rawstyle/vite@file:packages/vite", { "peerDependencies": { "rawstyle": "workspace:>=0.6", "rolldown-vite": "*" } }],
 
     "rawstyle-vite-example/rawstyle": ["rawstyle@file:packages/rawstyle", { "dependencies": { "@oxc-parser/binding-wasm32-wasi": "^0.115.0", "oxc-parser": "^0.115.0" } }],
-
-    "rawstyle-vite-example/typescript": ["typescript@5.9.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="],
 
     "rolldown/@oxc-project/types": ["@oxc-project/types@0.122.0", "", {}, "sha512-oLAl5kBpV4w69UtFZ9xqcmTi+GENWOcPF7FCrczTiBbmC0ibXxCwyvZGbO39rCVEuLGAZM84DH0pUIyyv/YJzA=="],
 
