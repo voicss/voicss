@@ -17,7 +17,7 @@
     "examples/next": {
       "name": "rawstyle-next-example",
       "dependencies": {
-        "next": "^16.2.1",
+        "next": "^16.2.2",
         "react": "^19.2.4",
         "react-dom": "^19.2.4",
       },
@@ -1061,6 +1061,14 @@
 
     "node-exports-info/semver": ["semver@6.3.1", "", { "bin": { "semver": "bin/semver.js" } }, "sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA=="],
 
+    "rawstyle-next-example/@rawstyle/next": ["@rawstyle/next@file:packages/next", { "peerDependencies": { "next": "*", "rawstyle": "workspace:>=0.6" } }],
+
+    "rawstyle-next-example/rawstyle": ["rawstyle@file:packages/rawstyle", { "dependencies": { "@oxc-parser/binding-wasm32-wasi": "^0.123.0", "oxc-parser": "^0.123.0" } }],
+
+    "rawstyle-vite-example/@rawstyle/vite": ["@rawstyle/vite@file:packages/vite", { "peerDependencies": { "rawstyle": "workspace:>=0.6", "vite": "*" } }],
+
+    "rawstyle-vite-example/rawstyle": ["rawstyle@file:packages/rawstyle", { "dependencies": { "@oxc-parser/binding-wasm32-wasi": "^0.123.0", "oxc-parser": "^0.123.0" } }],
+
     "rolldown/@oxc-project/types": ["@oxc-project/types@0.122.0", "", {}, "sha512-oLAl5kBpV4w69UtFZ9xqcmTi+GENWOcPF7FCrczTiBbmC0ibXxCwyvZGbO39rCVEuLGAZM84DH0pUIyyv/YJzA=="],
 
     "rolldown/@rolldown/pluginutils": ["@rolldown/pluginutils@1.0.0-rc.12", "", {}, "sha512-HHMwmarRKvoFsJorqYlFeFRzXZqCt2ETQlEDOb9aqssrnVBB1/+xgTGtuTrIk5vzLNX1MjMtTf7W9z3tsSbrxw=="],
@@ -1112,6 +1120,10 @@
     "eslint-plugin-jsx-a11y/minimatch/brace-expansion": ["brace-expansion@1.1.13", "", { "dependencies": { "balanced-match": "^1.0.0", "concat-map": "0.0.1" } }, "sha512-9ZLprWS6EENmhEOpjCYW2c8VkmOvckIJZfkr7rBW6dObmfgJ/L1GpSYW5Hpo9lDz4D1+n0Ckz8rU7FwHDQiG/w=="],
 
     "eslint-plugin-react/minimatch/brace-expansion": ["brace-expansion@1.1.13", "", { "dependencies": { "balanced-match": "^1.0.0", "concat-map": "0.0.1" } }, "sha512-9ZLprWS6EENmhEOpjCYW2c8VkmOvckIJZfkr7rBW6dObmfgJ/L1GpSYW5Hpo9lDz4D1+n0Ckz8rU7FwHDQiG/w=="],
+
+    "rawstyle-next-example/@rawstyle/next/rawstyle": ["rawstyle@file:packages/rawstyle", { "dependencies": { "@oxc-parser/binding-wasm32-wasi": "^0.123.0", "oxc-parser": "^0.123.0" } }],
+
+    "rawstyle-vite-example/@rawstyle/vite/rawstyle": ["rawstyle@file:packages/rawstyle", { "dependencies": { "@oxc-parser/binding-wasm32-wasi": "^0.123.0", "oxc-parser": "^0.123.0" } }],
 
     "@eslint/eslintrc/minimatch/brace-expansion/balanced-match": ["balanced-match@1.0.2", "", {}, "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="],
 
