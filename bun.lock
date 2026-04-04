@@ -4,14 +4,14 @@
   "workspaces": {
     "": {
       "devDependencies": {
-        "@eslint/js": "^10.0.1",
-        "@stylistic/eslint-plugin": "^5.10.0",
-        "@types/bun": "^1.3.11",
-        "eslint": "^10.1.0",
-        "jiti": "^2.6.1",
-        "tsdown": "0.21.7",
-        "typescript": "^6.0.2",
-        "typescript-eslint": "^8.58.0",
+        "@eslint/js": "latest",
+        "@stylistic/eslint-plugin": "latest",
+        "@types/bun": "latest",
+        "eslint": "latest",
+        "jiti": "latest",
+        "tsdown": "latest",
+        "typescript": "latest",
+        "typescript-eslint": "latest",
       },
     },
     "examples/next": {
