@@ -21,6 +21,6 @@
 	},
 	"peerDependencies": {
 		"rawstyle": "workspace:>=0.6",
-		"rolldown-vite": "*"
+		"vite": "*"
 	}
 }

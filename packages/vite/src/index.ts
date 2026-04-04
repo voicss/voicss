@@ -1,4 +1,4 @@
-import type { Plugin } from 'rolldown-vite'
+import type { Plugin } from 'vite'
 import { TRANSFORMABLE_EXT, VIRTUAL_PREFIX, RESOLVED_PREFIX } from 'rawstyle'
 import { transform } from 'rawstyle/transformer'
 
