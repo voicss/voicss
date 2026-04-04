@@ -17,7 +17,7 @@
 		"build:watch": "tsdown --watch",
 		"build:prod": "tsdown --prod",
 		"lint": "eslint",
-		"release": "bunx relion"
+		"release": "bunx relion -t @rawstyle/next@"
 	},
 	"peerDependencies": {
 		"rawstyle": "workspace:>=0.6",
