@@ -1113,10 +1113,6 @@
 
     "eslint-plugin-react/minimatch/brace-expansion": ["brace-expansion@1.1.13", "", { "dependencies": { "balanced-match": "^1.0.0", "concat-map": "0.0.1" } }, "sha512-9ZLprWS6EENmhEOpjCYW2c8VkmOvckIJZfkr7rBW6dObmfgJ/L1GpSYW5Hpo9lDz4D1+n0Ckz8rU7FwHDQiG/w=="],
 
-    "rawstyle-next-example/@rawstyle/next/rawstyle": ["rawstyle@file:packages/rawstyle", { "dependencies": { "@oxc-parser/binding-wasm32-wasi": "^0.115.0", "oxc-parser": "^0.115.0" } }],
-
-    "rawstyle-vite-example/@rawstyle/vite/rawstyle": ["rawstyle@file:packages/rawstyle", { "dependencies": { "@oxc-parser/binding-wasm32-wasi": "^0.115.0", "oxc-parser": "^0.115.0" } }],
-
     "@eslint/eslintrc/minimatch/brace-expansion/balanced-match": ["balanced-match@1.0.2", "", {}, "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="],
 
     "@types/eslint-plugin-jsx-a11y/eslint/@eslint/config-array/@eslint/object-schema": ["@eslint/object-schema@2.1.7", "", {}, "sha512-VtAOaymWVfZcmZbp6E2mympDIHvyjXs/12LqWYjVw6qjrfF+VK+fyG33kChz3nnK+SU5/NeHOqrTEHS8sXO3OA=="],
