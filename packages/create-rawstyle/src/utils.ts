@@ -9,13 +9,12 @@ export const handleCancel: <T>(value: T | symbol) => asserts value is T = value 
 
 export const resolveLinkedDeps = async (dir: string) => {
 	const pkgJson = readFileSync(`${dir}/package.json`, 'utf8')
-	const matches = [...pkgJson.matchAll(/"(.*)": "link:.*/g)]
-	let updatedPkgJson = pkgJson
-	for (const [match, pkg] of matches) {
+	let updated = pkgJson
+	for (const [match, pkg] of pkgJson.matchAll(/"(.*)": "\.\.\/.*/g)) {
 		const latestPkgVersion = await getLatestPkgVersion(pkg)
-		updatedPkgJson = updatedPkgJson.replace(match, `"${pkg}": "^${latestPkgVersion}",`)
+		updated = updated.replace(match, `"${pkg}": "^${latestPkgVersion}",`)
 	}
-	writeFileSync(`${dir}/package.json`, updatedPkgJson, 'utf8')
+	writeFileSync(`${dir}/package.json`, updated, 'utf8')
 }
 
 const getLatestPkgVersion = async (pkgName: string): Promise<string> => {
