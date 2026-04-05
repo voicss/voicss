@@ -21,6 +21,6 @@
 	},
 	"peerDependencies": {
 		"rawstyle": "workspace:>=0.6",
-		"vite": "*"
+		"vite": "8.0.3"
 	}
 }
