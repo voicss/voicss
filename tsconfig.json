@@ -3,9 +3,7 @@
 		"noEmit": true,
 		"skipLibCheck": true,
 		"verbatimModuleSyntax": true,
-		"types": ["bun"],
-		"paths": { "@/*": ["./src/*"] },
+		"types": ["bun"]
 	},
-	"include": ["**/*.ts"],
-	"exclude": ["examples"]
+	"include": ["*.ts"]
 }
