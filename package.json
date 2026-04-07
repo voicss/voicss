@@ -6,6 +6,7 @@
 		"build:watch": "bun --parallel -F './packages/*' build:watch",
 		"build:prod": "bun -F './packages/*' build:prod",
 		"lint": "bun -F './packages/*' lint",
+		"typecheck": "bun -F './packages/*' typecheck",
 		"test": "bun -F './packages/*' test"
 	},
 	"devDependencies": {
