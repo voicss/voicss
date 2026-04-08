@@ -1,6 +1,17 @@
 # Changelog
 
 
+## &ensp; [` 📦 create-rawstyle@0.2.0  `](https://github.com/rawstylecss/rawstyle/compare/create-rawstyle@0.1.4...create-rawstyle@0.2.0)
+
+### &emsp; 🎁 Features
+- **Tsdown scaffolding**: added `tsdown` as an available platform option when creating a new Rawstyle project. [🡥](https://github.com/rawstylecss/rawstyle/commit/a92602e)
+
+### &emsp; 🩹 Fixes
+- **Linked dependency replacement**: fixed local dependency detection so template cloning now correctly replaces linked packages in `package.json`. [🡥](https://github.com/rawstylecss/rawstyle/commit/bbed1a3)
+
+##### &emsp;&emsp; [Full Changelog](https://github.com/rawstylecss/rawstyle/compare/create-rawstyle@0.1.4...create-rawstyle@0.2.0) &ensp;•&ensp; Apr 8, 2026
+
+
 ## &ensp; [` 📦 create-rawstyle@0.1.4  `](https://github.com/rawstylecss/rawstyle/compare/create-rawstyle@0.1.3...create-rawstyle@0.1.4)
 
 ### &emsp; ⚙️ Internal
