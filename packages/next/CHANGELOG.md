@@ -1,6 +1,14 @@
 # Changelog
 
 
+## &ensp; [` 📦 @rawstyle/next@0.5.0  `](https://github.com/rawstylecss/rawstyle/compare/@rawstyle/next@0.4.0...@rawstyle/next@0.5.0)
+
+### &emsp; 🧨 BREAKING CHANGES
+- **Rawstyle dependency update**: the plugin now requires `rawstyle` version `>=0.7` as a peer dependency. [🡥](https://github.com/rawstylecss/rawstyle/commit/580a1db)
+
+##### &emsp;&emsp; [Full Changelog](https://github.com/rawstylecss/rawstyle/compare/@rawstyle/next@0.4.0...@rawstyle/next@0.5.0) &ensp;•&ensp; Apr 8, 2026
+
+
 ## &ensp; [` 📦 @rawstyle/next@0.4.0  `](https://github.com/rawstylecss/rawstyle/compare/@rawstyle/next@0.3.2...@rawstyle/next@0.4.0)
 
 ### &emsp; 🧨 BREAKING CHANGES
