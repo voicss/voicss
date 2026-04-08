@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"noEmit": true,
+		"skipLibCheck": true,
+		"verbatimModuleSyntax": true,
+		"types": ["bun", "rawstyle/globals"],
+		"paths": { "@/*": ["./src/*"] },
+	},
+	"include": ["**/*.ts"]
+}

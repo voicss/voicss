@@ -43,6 +43,26 @@
         "typescript-eslint": "^8.58.0",
       },
     },
+    "examples/tsdown": {
+      "name": "rawstyle-tsdown-example",
+      "dependencies": {
+        "semver": "^7.7.4",
+      },
+      "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@rawstyle/vite": "../../packages/vite",
+        "@stylistic/eslint-plugin": "^5.10.0",
+        "@tsdown/css": "^0.21.7",
+        "@types/bun": "^1.3.11",
+        "@types/semver": "^7.7.1",
+        "eslint": "^10.2.0",
+        "jiti": "^2.6.1",
+        "rawstyle": "../../packages/rawstyle",
+        "tsdown": "^0.21.7",
+        "typescript": "^6.0.2",
+        "typescript-eslint": "^8.58.0",
+      },
+    },
     "examples/vite": {
       "name": "rawstyle-vite-example",
       "dependencies": {
@@ -358,6 +378,8 @@
 
     "@swc/helpers": ["@swc/helpers@0.5.15", "", { "dependencies": { "tslib": "^2.8.0" } }, "sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g=="],
 
+    "@tsdown/css": ["@tsdown/css@0.21.7", "", { "dependencies": { "lightningcss": "^1.32.0", "postcss-load-config": "^6.0.1", "rolldown": "1.0.0-rc.12" }, "peerDependencies": { "postcss": "^8.4.0", "postcss-import": "^16.0.0", "postcss-modules": "^6.0.0", "sass": "*", "sass-embedded": "*", "tsdown": "0.21.7" }, "optionalPeers": ["postcss", "postcss-import", "postcss-modules", "sass", "sass-embedded"] }, "sha512-kydfZ109LIXwoBDrdIeEVi+PtM8375X9d/6UtYtjhj6TS94J25gJVUXw9AyJE6THEqB6OdGKM5MLqJPutO4kkA=="],
+
     "@tybys/wasm-util": ["@tybys/wasm-util@0.10.1", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg=="],
 
     "@types/bun": ["@types/bun@1.3.11", "", { "dependencies": { "bun-types": "1.3.11" } }, "sha512-5vPne5QvtpjGpsGYXiFyycfpDF2ECyPcTSsFBMa0fraoxiQyMJ3SmuQIGhzPg2WJuWxVBoxWJ2kClYTcw/4fAg=="],
@@ -377,6 +399,8 @@
     "@types/react": ["@types/react@19.2.14", "", { "dependencies": { "csstype": "^3.2.2" } }, "sha512-ilcTH/UniCkMdtexkoCN0bI7pMcJDvmQFPvuPvmEaYA/NSfFTAgdUSLAoVjaRJm7+6PvcM+q1zYOwS4wTYMF9w=="],
 
     "@types/react-dom": ["@types/react-dom@19.2.3", "", { "peerDependencies": { "@types/react": "^19.2.0" } }, "sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ=="],
+
+    "@types/semver": ["@types/semver@7.7.1", "", {}, "sha512-FmgJfu+MOcQ370SD0ev7EI8TlCAfKYU+B4m5T3yXc1CiRN94g/SZPtsCkk506aUDtlMnFZvasDwHHUcZUEaYuA=="],
 
     "@typescript-eslint/eslint-plugin": ["@typescript-eslint/eslint-plugin@8.58.0", "", { "dependencies": { "@eslint-community/regexpp": "^4.12.2", "@typescript-eslint/scope-manager": "8.58.0", "@typescript-eslint/type-utils": "8.58.0", "@typescript-eslint/utils": "8.58.0", "@typescript-eslint/visitor-keys": "8.58.0", "ignore": "^7.0.5", "natural-compare": "^1.4.0", "ts-api-utils": "^2.5.0" }, "peerDependencies": { "@typescript-eslint/parser": "^8.58.0", "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0", "typescript": ">=4.8.4 <6.1.0" } }, "sha512-RLkVSiNuUP1C2ROIWfqX+YcUfLaSnxGE/8M+Y57lopVwg9VTYYfhuz15Yf1IzCKgZj6/rIbYTmJCUSqr76r0Wg=="],
 
@@ -772,6 +796,8 @@
 
     "lightningcss-win32-x64-msvc": ["lightningcss-win32-x64-msvc@1.32.0", "", { "os": "win32", "cpu": "x64" }, "sha512-Amq9B/SoZYdDi1kFrojnoqPLxYhQ4Wo5XiL8EVJrVsB8ARoC1PWW6VGtT0WKCemjy8aC+louJnjS7U18x3b06Q=="],
 
+    "lilconfig": ["lilconfig@3.1.3", "", {}, "sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw=="],
+
     "locate-path": ["locate-path@6.0.0", "", { "dependencies": { "p-locate": "^5.0.0" } }, "sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw=="],
 
     "lodash.merge": ["lodash.merge@4.6.2", "", {}, "sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ=="],
@@ -844,6 +870,8 @@
 
     "postcss": ["postcss@8.4.31", "", { "dependencies": { "nanoid": "^3.3.6", "picocolors": "^1.0.0", "source-map-js": "^1.0.2" } }, "sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ=="],
 
+    "postcss-load-config": ["postcss-load-config@6.0.1", "", { "dependencies": { "lilconfig": "^3.1.1" }, "peerDependencies": { "jiti": ">=1.21.0", "postcss": ">=8.0.9", "tsx": "^4.8.1", "yaml": "^2.4.2" }, "optionalPeers": ["jiti", "postcss", "tsx", "yaml"] }, "sha512-oPtTM4oerL+UXmx+93ytZVN82RrlY/wPUV8IeDxFrzIjXOLF1pN+EmKPLbubvKHT2HC20xXsCAH2Z+CKV6Oz/g=="],
+
     "prelude-ls": ["prelude-ls@1.2.1", "", {}, "sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g=="],
 
     "prop-types": ["prop-types@15.8.1", "", { "dependencies": { "loose-envify": "^1.4.0", "object-assign": "^4.1.1", "react-is": "^16.13.1" } }, "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="],
@@ -859,6 +887,8 @@
     "rawstyle-eslint": ["rawstyle-eslint@0.2.0", "", { "peerDependencies": { "@eslint/core": "*", "rawstyle": ">=0.6" } }, "sha512-XLtW2vb1u/a4Q4LNpWywYJ9fzM/gmoD/gUdG3p3d1CuvVvpXSQwtwo6Tu5HbIyiCRJEnptjuTm5mCDJlfMZbUA=="],
 
     "rawstyle-next-example": ["rawstyle-next-example@workspace:examples/next"],
+
+    "rawstyle-tsdown-example": ["rawstyle-tsdown-example@workspace:examples/tsdown"],
 
     "rawstyle-vite-example": ["rawstyle-vite-example@workspace:examples/vite"],
 
@@ -1066,6 +1096,10 @@
 
     "rawstyle-next-example/rawstyle": ["rawstyle@file:packages/rawstyle", { "dependencies": { "@oxc-parser/binding-wasm32-wasi": "^0.123.0", "oxc-parser": "^0.123.0" } }],
 
+    "rawstyle-tsdown-example/@rawstyle/vite": ["@rawstyle/vite@file:packages/vite", { "peerDependencies": { "rawstyle": "workspace:>=0.6", "vite": "*" } }],
+
+    "rawstyle-tsdown-example/rawstyle": ["rawstyle@file:packages/rawstyle", { "dependencies": { "@oxc-parser/binding-wasm32-wasi": "^0.123.0", "oxc-parser": "^0.123.0" } }],
+
     "rawstyle-vite-example/@rawstyle/vite": ["@rawstyle/vite@file:packages/vite", { "peerDependencies": { "rawstyle": "workspace:>=0.6", "vite": "*" } }],
 
     "rawstyle-vite-example/rawstyle": ["rawstyle@file:packages/rawstyle", { "dependencies": { "@oxc-parser/binding-wasm32-wasi": "^0.123.0", "oxc-parser": "^0.123.0" } }],
@@ -1123,6 +1157,8 @@
     "eslint-plugin-react/minimatch/brace-expansion": ["brace-expansion@1.1.13", "", { "dependencies": { "balanced-match": "^1.0.0", "concat-map": "0.0.1" } }, "sha512-9ZLprWS6EENmhEOpjCYW2c8VkmOvckIJZfkr7rBW6dObmfgJ/L1GpSYW5Hpo9lDz4D1+n0Ckz8rU7FwHDQiG/w=="],
 
     "rawstyle-next-example/@rawstyle/next/rawstyle": ["rawstyle@file:packages/rawstyle", { "dependencies": { "@oxc-parser/binding-wasm32-wasi": "^0.123.0", "oxc-parser": "^0.123.0" } }],
+
+    "rawstyle-tsdown-example/@rawstyle/vite/rawstyle": ["rawstyle@file:packages/rawstyle", { "dependencies": { "@oxc-parser/binding-wasm32-wasi": "^0.123.0", "oxc-parser": "^0.123.0" } }],
 
     "rawstyle-vite-example/@rawstyle/vite/rawstyle": ["rawstyle@file:packages/rawstyle", { "dependencies": { "@oxc-parser/binding-wasm32-wasi": "^0.123.0", "oxc-parser": "^0.123.0" } }],
 

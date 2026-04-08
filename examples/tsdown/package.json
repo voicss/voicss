@@ -1,0 +1,30 @@
+{
+	"name": "rawstyle-tsdown-example",
+	"description": "🧪 Rawstyle + tsdown demo project",
+	"type": "module",
+	"scripts": {
+		"build": "tsdown",
+		"build:watch": "tsdown --watch",
+		"build:prod": "tsdown --prod",
+		"lint": "eslint",
+		"typecheck": "tsc",
+		"release": "bunx relion"
+	},
+	"dependencies": {
+		"semver": "^7.7.4"
+	},
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"@rawstyle/vite": "../../packages/vite",
+		"@stylistic/eslint-plugin": "^5.10.0",
+		"@tsdown/css": "^0.21.7",
+		"@types/bun": "^1.3.11",
+		"@types/semver": "^7.7.1",
+		"eslint": "^10.2.0",
+		"jiti": "^2.6.1",
+		"rawstyle": "../../packages/rawstyle",
+		"tsdown": "^0.21.7",
+		"typescript": "^6.0.2",
+		"typescript-eslint": "^8.58.0"
+	}
+}
