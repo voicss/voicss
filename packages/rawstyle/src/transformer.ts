@@ -1,6 +1,16 @@
 import { parseSync, Visitor } from 'oxc-parser'
 import { generateHash, dedent } from './utils'
-import type { TransformResult, Replacement } from './types'
+
+export interface TransformResult {
+	transformed: string
+	css: string
+}
+
+export interface Replacement {
+	start: number
+	end: number
+	replacement: string
+}
 
 export const transform = (file: string, source: string): TransformResult => {
 	const { program } = parseSync(file, source)
