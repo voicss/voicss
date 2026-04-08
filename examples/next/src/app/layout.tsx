@@ -4,7 +4,7 @@ import { Tiny5 } from 'next/font/google'
 export const metadata: Metadata = { title: 'Rawstyle + Next' }
 const tiny5 = Tiny5({ variable: '--font-tiny5', weight: '400' })
 
-export default function RootLayout({ children}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang="en">
 			<body className={tiny5.variable}>{children}</body>
