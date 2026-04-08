@@ -2,9 +2,7 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 import eslint from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import eslintReact from '@eslint-react/eslint-plugin'
-import reactPlugin from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
-import jsxA11y from 'eslint-plugin-jsx-a11y'
 import nextEslint from '@next/eslint-plugin-next'
 import rawstyle from 'rawstyle-eslint'
 import stylistic from '@stylistic/eslint-plugin'
@@ -31,9 +29,6 @@ export default defineConfig([
 		files: ['**/*.ts?(x)'],
 		settings: { react: { version: 'detect' } },
 		extends: [
-			jsxA11y.flatConfigs.strict,
-			reactPlugin.configs.flat.recommended,
-			reactPlugin.configs.flat['jsx-runtime'],
 			reactHooks.configs.flat.recommended,
 			eslintReact.configs['recommended-type-checked'],
 			rawstyle.configs.recommended,
