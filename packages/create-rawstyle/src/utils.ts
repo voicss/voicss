@@ -10,7 +10,7 @@ export const handleCancel: <T>(value: T | symbol) => asserts value is T = value 
 export const resolveLinkedDeps = async (dir: string) => {
 	const pkgJson = readFileSync(`${dir}/package.json`, 'utf8')
 	let updated = pkgJson
-	for (const [match, pkg] of pkgJson.matchAll(/"(.*)": "\.\.\/.*/g)) {
+	for (const [match, pkg] of pkgJson.matchAll(/"(.*)": "workspace.*/g)) {
 		const latestPkgVersion = await getLatestPkgVersion(pkg)
 		updated = updated.replace(match, `"${pkg}": "^${latestPkgVersion}",`)
 	}
