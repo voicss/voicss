@@ -82,12 +82,12 @@
         "rawstyle-eslint": "^0.2.0",
         "typescript": "^6.0.2",
         "typescript-eslint": "^8.58.0",
-        "vite": "^8.0.4",
+        "vite": "^8.0.5",
       },
     },
     "packages/create-rawstyle": {
       "name": "create-rawstyle",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "bin": "dist/index.js",
       "dependencies": {
         "@clack/prompts": "^1.2.0",
@@ -96,7 +96,7 @@
     },
     "packages/next": {
       "name": "@rawstyle/next",
-      "version": "0.5.1",
+      "version": "0.5.2",
       "peerDependencies": {
         "next": "*",
         "rawstyle": "workspace:>=0.7",
@@ -104,7 +104,7 @@
     },
     "packages/rawstyle": {
       "name": "rawstyle",
-      "version": "0.7.0",
+      "version": "0.7.1",
       "dependencies": {
         "@oxc-parser/binding-wasm32-wasi": "^0.124.0",
         "oxc-parser": "^0.124.0",
