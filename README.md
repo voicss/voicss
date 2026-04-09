@@ -59,7 +59,7 @@ export default {
 	turbopack: { rules: { ...rawstyleTurboRule } },
 } satisfies NextConfig
 ```
-> The loader extracts CSS and injects it as a base64 CSS import.
+> The loader extracts CSS into locally cached files and injects them as relative imports.
 
 #### Vite
 
