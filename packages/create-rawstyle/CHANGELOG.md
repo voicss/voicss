@@ -1,6 +1,14 @@
 # Changelog
 
 
+## &ensp; [` 📦 create-rawstyle@0.2.1  `](https://github.com/rawstylecss/rawstyle/compare/create-rawstyle@0.2.0...create-rawstyle@0.2.1)
+
+### &emsp; 🩹 Fixes
+- **Workspace dependency resolution**: scaffolded projects now correctly replace `workspace:` dependency specifiers with published package versions. [🡥](https://github.com/rawstylecss/rawstyle/commit/d2a4f53)
+
+##### &emsp;&emsp; [Full Changelog](https://github.com/rawstylecss/rawstyle/compare/create-rawstyle@0.2.0...create-rawstyle@0.2.1) &ensp;•&ensp; Apr 9, 2026
+
+
 ## &ensp; [` 📦 create-rawstyle@0.2.0  `](https://github.com/rawstylecss/rawstyle/compare/create-rawstyle@0.1.4...create-rawstyle@0.2.0)
 
 ### &emsp; 🎁 Features
