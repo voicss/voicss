@@ -1,6 +1,14 @@
 # Changelog
 
 
+## &ensp; [` 📦 @rawstyle/next@0.5.2  `](https://github.com/rawstylecss/rawstyle/compare/@rawstyle/next@0.5.1...@rawstyle/next@0.5.2)
+
+### &emsp; 🩹 Fixes
+- **Smooth Next.js HMR**: resolved styling flashes during hot module replacement. The loader now caches extracted CSS into physical files in `node_modules/.rawstyle` and injects stable relative imports instead of using base64 data URIs. [🡥](https://github.com/rawstylecss/rawstyle/commit/e1eea2e)
+
+##### &emsp;&emsp; [Full Changelog](https://github.com/rawstylecss/rawstyle/compare/@rawstyle/next@0.5.1...@rawstyle/next@0.5.2) &ensp;•&ensp; Apr 9, 2026
+
+
 ## &ensp; [` 📦 @rawstyle/next@0.5.1  `](https://github.com/rawstylecss/rawstyle/compare/@rawstyle/next@0.5.0...@rawstyle/next@0.5.1)
 
 ### &emsp; 🩹 Fixes
