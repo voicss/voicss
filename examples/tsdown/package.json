@@ -18,7 +18,7 @@
 		"@rawstyle/vite": "workspace:*",
 		"@stylistic/eslint-plugin": "^5.10.0",
 		"@tsdown/css": "^0.21.7",
-		"@types/bun": "^1.3.11",
+		"@types/bun": "^1.3.12",
 		"@types/semver": "^7.7.1",
 		"eslint": "^10.2.0",
 		"jiti": "^2.6.1",
