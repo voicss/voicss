@@ -1,27 +1,27 @@
 {
-	"name": "@rawstyle/next",
-	"version": "0.5.2",
-	"description": "🔌 Rawstyle Turbopack loader",
+	"name": "@voicss/next",
+	"version": "0.0.0",
+	"description": "🔌 Voicss Next Plugin",
 	"author": "kh4f <kh4f.dev@gmail.com>",
 	"license": "MIT",
-	"repository": "https://github.com/rawstylecss/rawstyle",
-	"bugs": "https://github.com/rawstylecss/rawstyle/issues",
-	"homepage": "https://github.com/rawstylecss/rawstyle#readme",
-	"keywords": ["rawstyle", "rawstyle-next", "css-in-js", "next-plugin"],
+	"repository": "https://github.com/voicss/voicss",
+	"bugs": "https://github.com/voicss/voicss/issues",
+	"homepage": "https://github.com/voicss/voicss#readme",
+	"keywords": ["voicss", "voicss-next", "css-in-ts", "next-plugin"],
 	"files": ["dist"],
+	"type": "module",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
-	"type": "module",
 	"scripts": {
 		"build": "tsdown",
-		"build:watch": "tsdown --watch",
-		"build:prod": "tsdown --prod",
+		"build:watch": "tsdown -w",
+		"build:prod": "tsdown -p",
 		"lint": "eslint",
 		"typecheck": "tsc",
-		"release": "bunx relion -t @rawstyle/next@"
+		"release": "bunx relion -t @voicss/next@"
 	},
 	"peerDependencies": {
-		"rawstyle": "workspace:>=0.7",
+		"voicss": "workspace:>=0",
 		"next": "*"
 	}
 }

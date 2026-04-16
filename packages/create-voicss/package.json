@@ -1,27 +1,26 @@
 {
-	"name": "@voicss/vite",
+	"name": "create-voicss",
 	"version": "0.0.0",
-	"description": "🔌 Voicss Vite Plugin",
+	"description": "🪄 Voicss Starter CLI",
 	"author": "kh4f <kh4f.dev@gmail.com>",
 	"license": "MIT",
 	"repository": "https://github.com/voicss/voicss",
 	"bugs": "https://github.com/voicss/voicss/issues",
 	"homepage": "https://github.com/voicss/voicss#readme",
-	"keywords": ["voicss", "voicss-vite", "css-in-ts", "vite-plugin"],
+	"keywords": ["voicss", "create-voicss", "css-in-ts"],
 	"files": ["dist"],
 	"type": "module",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
+	"bin": "dist/index.js",
 	"scripts": {
 		"build": "tsdown",
 		"build:watch": "tsdown -w",
 		"build:prod": "tsdown -p",
 		"lint": "eslint",
 		"typecheck": "tsc",
-		"release": "bunx relion -t @voicss/vite@"
+		"release": "bunx relion -t create-voicss@"
 	},
-	"peerDependencies": {
-		"voicss": "workspace:>=0",
-		"vite": "*"
+	"dependencies": {
+		"@clack/prompts": "^1.2.0",
+		"giget": "^3.2.0"
 	}
 }

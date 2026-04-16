@@ -1,14 +1,14 @@
 {
-	"name": "@voicss/vite",
+	"name": "voicss",
 	"version": "0.0.0",
-	"description": "🔌 Voicss Vite Plugin",
+	"description": "⚡ Ultra‑light Compile‑time CSS‑in‑TS",
 	"author": "kh4f <kh4f.dev@gmail.com>",
 	"license": "MIT",
 	"repository": "https://github.com/voicss/voicss",
 	"bugs": "https://github.com/voicss/voicss/issues",
 	"homepage": "https://github.com/voicss/voicss#readme",
-	"keywords": ["voicss", "voicss-vite", "css-in-ts", "vite-plugin"],
-	"files": ["dist"],
+	"keywords": ["voicss", "voicss-core", "css-in-ts"],
+	"files": ["dist", "README.md"],
 	"type": "module",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -18,10 +18,9 @@
 		"build:prod": "tsdown -p",
 		"lint": "eslint",
 		"typecheck": "tsc",
-		"release": "bunx relion -t @voicss/vite@"
-	},
-	"peerDependencies": {
-		"voicss": "workspace:>=0",
-		"vite": "*"
+		"test": "bun test",
+		"release": "bunx relion -t voicss@",
+		"prepack": "cp ../../README.md .",
+		"postpack": "rm README.md"
 	}
 }

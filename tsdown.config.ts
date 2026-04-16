@@ -1,6 +1,6 @@
 import type { UserConfig } from 'tsdown'
 
-const isProd = process.argv.includes('--prod')
+const isProd = process.argv.includes('-p')
 
 export default {
 	minify: isProd,

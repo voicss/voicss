@@ -20,7 +20,7 @@ jobs:
           PACKAGE=${BASH_REMATCH[1]}
           DIR=${BASH_REMATCH[3]}
           VERSION=${BASH_REMATCH[4]}
-          ZIP=${PACKAGE/@rawstyle\//rawstyle-}-v$VERSION.zip
+          ZIP=${PACKAGE/@voicss\//voicss-}-v$VERSION.zip
           echo -e "DIR=$DIR\nPACKAGE=$PACKAGE\nVERSION=$VERSION\nZIP=$ZIP" >> $GITHUB_ENV
 
       - run: bun i
@@ -32,7 +32,7 @@ jobs:
       - run: |
           cp ../../LICENSE .
           zip -r $ZIP dist package.json LICENSE \
-            $([[ $DIR == "rawstyle" ]] && cp ../../README.md . && echo README.md || true)
+            $([[ $DIR == "voicss" ]] && cp ../../README.md . && echo README.md || true)
           rm -f LICENSE README.md
         working-directory: packages/${{ env.DIR }}
       - run: bun pm pack && npm publish *.tgz
