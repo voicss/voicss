@@ -1,6 +1,6 @@
 {
 	"name": "@voicss/vite",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "🔌 Voicss Vite Plugin",
 	"author": "kh4f <kh4f.dev@gmail.com>",
 	"license": "MIT",
