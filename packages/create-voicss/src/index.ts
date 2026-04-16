@@ -22,7 +22,7 @@ void (async () => {
 
 	const s = spinner()
 	s.start('Scaffolding project...')
-	await downloadTemplate(`gh:voicss/voicss/examples/${platform}`, { dir: projectName })
+	await downloadTemplate(`gh:voicss/voicss/templates/${platform}`, { dir: projectName })
 	await resolveWorkspaceDeps(projectName)
 	s.stop('Project scaffolded successfully!')
 
