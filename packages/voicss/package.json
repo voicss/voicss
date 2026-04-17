@@ -1,6 +1,6 @@
 {
 	"name": "voicss",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "⚡ Ultra‑light Compile‑time CSS‑in‑TS",
 	"author": "kh4f <kh4f.dev@gmail.com>",
 	"license": "MIT",
