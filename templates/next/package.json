@@ -28,7 +28,7 @@
 		"@types/react-dom": "^19.2.3",
 		"@voicss/eslint": "^0.2.0",
 		"@voicss/next": "workspace:*",
-		"eslint": "^10.2.0",
+		"eslint": "^10.2.1",
 		"eslint-plugin-react-hooks": "^7.1.1",
 		"jiti": "^2.6.1",
 		"typescript": "^6.0.3",
