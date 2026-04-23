@@ -15,7 +15,7 @@
 		"@stylistic/eslint-plugin": "^5.10.0",
 		"@tsdown/css": "^0.21.9",
 		"@types/bun": "^1.3.12",
-		"@voicss/eslint": "^0.2.0",
+		"@voicss/eslint": "^0.3.0",
 		"@voicss/vite": "workspace:*",
 		"eslint": "^10.2.1",
 		"jiti": "^2.6.1",
