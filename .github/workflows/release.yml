@@ -19,20 +19,15 @@ jobs:
           registry-url: https://registry.npmjs.org
       - uses: oven-sh/setup-bun@v2
 
-      - run: |
-          [[ $TAG =~ ^((@.+?\/)?(.+))@(.+)$ ]]
-          PACKAGE=${BASH_REMATCH[1]}
-          DIR=${BASH_REMATCH[3]}
-          VERSION=${BASH_REMATCH[4]}
-          echo -e "DIR=$DIR\nPACKAGE=$PACKAGE\nVERSION=$VERSION" >> $GITHUB_ENV
+      - run: echo PACKAGE=${TAG%@*} >> $GITHUB_ENV
 
       - run: bun i
       - run: bun lint
       - run: bun run build
 
-      - run: bun pm pack && npm publish *.tgz
-        working-directory: packages/${{ env.DIR }}
+      - run: npm stage publish
+        working-directory: packages/${{ env.PACKAGE }}
       - run: gh release create $TAG --title $TAG --draft
-        working-directory: packages/${{ env.DIR }}
+        working-directory: packages/${{ env.PACKAGE }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
