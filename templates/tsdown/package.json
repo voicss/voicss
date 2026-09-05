@@ -1,6 +1,6 @@
 {
-	"name": "vois-tsdown",
-	"description": "🧩 Vois × tsdown Template",
+	"name": "voicss-tsdown",
+	"description": "🧩 Voicss × tsdown Template",
 	"type": "module",
 	"scripts": {
 		"dev": "tsdown -w",
@@ -10,10 +10,10 @@
 	"devDependencies": {
 		"@kh4f/eslint-config": "^0.4.3",
 		"@tsdown/css": "^0.22.14",
-		"vois": "workspace:*",
+		"voicss": "workspace:*",
 		"eslint": "^10.9.1",
 		"tsdown": "^0.22.14",
 		"typescript": "^6.0.3",
-		"vois-eslint": "workspace:*"
+		"voicss-eslint": "workspace:*"
 	}
 }

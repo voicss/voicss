@@ -1,6 +1,6 @@
 import { defineConfig } from 'tsdown'
-import vois from 'vois/vite'
+import voicss from 'voicss/vite'
 
 export default defineConfig({
-	plugins: [vois()],
+	plugins: [voicss()],
 })

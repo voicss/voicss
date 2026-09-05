@@ -1,15 +1,15 @@
 {
-	"name": "vois-vscode",
-	"displayName": "Vois",
+	"name": "voicss-vscode",
+	"displayName": "Voicss",
 	"version": "0.0.0",
-	"description": "💎 Native CSS Features for Vois",
+	"description": "💎 Native CSS Features for Voicss",
 	"author": "kh4f",
 	"publisher": "kh4f",
 	"license": "MIT",
-	"repository": "https://github.com/kh4f/vois-vscode",
-	"homepage": "https://github.com/kh4f/vois-vscode",
-	"bugs": "https://github.com/kh4f/vois-vscode/issues",
-	"keywords": ["vois", "vois-vscode", "css-in-ts"],
+	"repository": "https://github.com/kh4f/voicss-vscode",
+	"homepage": "https://github.com/kh4f/voicss-vscode",
+	"bugs": "https://github.com/kh4f/voicss-vscode/issues",
+	"keywords": ["voicss", "voicss-vscode", "css-in-ts"],
 	"categories": ["Programming Languages", "Formatters", "Snippets", "Linters"],
 	"icon": "icon.png",
 	"galleryBanner": { "color": "#221816", "theme": "dark" },
@@ -20,7 +20,7 @@
 	"activationEvents": ["onLanguage:typescript", "onLanguage:typescriptreact"],
 	"contributes": {
 		"grammars": [{
-			"scopeName": "vois.css.injection",
+			"scopeName": "voicss.css.injection",
 			"path": "syntaxes/injection.json",
 			"injectTo": ["source.ts", "source.tsx"],
 			"embeddedLanguages": { "meta.embedded.block.css": "css" }

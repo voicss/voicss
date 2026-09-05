@@ -13,7 +13,7 @@ export const activate = (context: ExtensionContext) => {
 		debug: { module: serverModule, transport: TransportKind.ipc },
 	}
 
-	client = new LanguageClient('vois-language-server', 'Vois Language Server', serverOptions, clientOptions)
+	client = new LanguageClient('voicss-language-server', 'Voicss Language Server', serverOptions, clientOptions)
 	void client.start()
 }
 

@@ -1,29 +1,29 @@
-# 🧹 Vois ESLint Plugin
+# 🧹 Voicss ESLint Plugin
 
-An ESLint plugin for **CSS formatting in Vois CSS blocks**
+An ESLint plugin for **CSS formatting in Voicss CSS blocks**
 
 ## 📥 Install
 
 ```bash
-bun a -d vois-eslint
+bun a -d voicss-eslint
 ```
 
 ## 🕹️ Usage
 
 ```ts
 // eslint.config.ts
-import vois from 'vois-eslint'
+import voicss from 'voicss-eslint'
 
 export default defineConfig([
 	{
-		name: 'Vois',
+		name: 'Voicss',
 		files: ['**/*.tsx'],
-		extends: [vois.configs.recommended], // enables all rules
-		// plugins: { vois }, // not necessary when using the recommended config
-		rules: { 'vois/indent': 'off' }, // can override rules here
+		extends: [voicss.configs.recommended], // enables all rules
+		// plugins: { voicss }, // not necessary when using the recommended config
+		rules: { 'voicss/indent': 'off' }, // can override rules here
 	},
 	// or just
-	vois.configs.recommended,
+	voicss.configs.recommended,
 ])
 ```
 

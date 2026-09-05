@@ -3,7 +3,7 @@ import { intro, select, spinner, text, outro, cancel, isCancel } from '@clack/pr
 import { downloadTemplate } from 'giget'
 
 console.log()
-intro('Create a new Vois project')
+intro('Create a new Voicss project')
 
 const platform = await select({
 	message: 'Pick a platform:',
@@ -17,14 +17,14 @@ handleCancel(platform)
 
 const projectName = await text({
 	message: 'Project name:',
-	defaultValue: `vois-${platform}`,
-	placeholder: `vois-${platform}`,
+	defaultValue: `voicss-${platform}`,
+	placeholder: `voicss-${platform}`,
 })
 handleCancel(projectName)
 
 const s = spinner()
 s.start('Scaffolding project...')
-await downloadTemplate(`gh:kh4f/vois/templates/${platform}`, { dir: projectName })
+await downloadTemplate(`gh:kh4f/voicss/templates/${platform}`, { dir: projectName })
 await resolveWorkspaceDeps(projectName)
 s.stop('Project scaffolded successfully.')
 

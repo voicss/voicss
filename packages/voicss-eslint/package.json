@@ -1,0 +1,22 @@
+{
+	"name": "voicss-eslint",
+	"version": "0.0.0",
+	"description": "🧹 CSS Formatting for Voicss",
+	"author": "kh4f",
+	"license": "MIT",
+	"repository": "https://github.com/kh4f/voicss-eslint",
+	"homepage": "https://github.com/kh4f/voicss-eslint",
+	"bugs": "https://github.com/kh4f/voicss-eslint/issues",
+	"keywords": ["voicss", "css-in-ts", "eslint", "eslint-plugin", "css-formatting"],
+	"files": ["dist"],
+	"main": "dist/index.mjs",
+	"types": "dist/index.d.mts",
+	"scripts": {
+		"build": "tsdown",
+		"lint": "tsc && eslint"
+	},
+	"peerDependencies": {
+		"@eslint/core": "^1",
+		"@typescript-eslint/utils": "^8"
+	}
+}

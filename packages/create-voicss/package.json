@@ -1,0 +1,21 @@
+{
+	"name": "create-voicss",
+	"version": "0.0.0",
+	"description": "🪄 Voicss Project Scaffolder",
+	"author": "kh4f",
+	"license": "MIT",
+	"repository": "https://github.com/kh4f/voicss",
+	"homepage": "https://github.com/kh4f/voicss",
+	"bugs": "https://github.com/kh4f/voicss/issues",
+	"keywords": ["voicss", "voicss-template", "project-generator", "scaffold", "starter"],
+	"files": ["dist"],
+	"bin": "dist/index.mjs",
+	"scripts": {
+		"build": "tsdown",
+		"lint": "tsc && eslint"
+	},
+	"dependencies": {
+		"@clack/prompts": "^1.7.0",
+		"giget": "^3.3.1"
+	}
+}

@@ -1,8 +1,8 @@
 {
 	"version": "2.0.0",
 	"tasks": [{
-		"label": "build vois-vscode",
+		"label": "build voicss-vscode",
 		"type": "shell",
-		"command": "bun -F vois-vscode build",
+		"command": "bun -F voicss-vscode build",
 	}]
 }

@@ -1,6 +1,6 @@
-import { voisTurboRule } from 'vois/next'
+import { voicssTurboRule } from 'voicss/next'
 import type { NextConfig } from 'next'
 
 export default {
-	turbopack: { rules: { ...voisTurboRule } },
+	turbopack: { rules: { ...voicssTurboRule } },
 } satisfies NextConfig

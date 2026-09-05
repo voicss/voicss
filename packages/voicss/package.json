@@ -1,12 +1,12 @@
 {
-	"name": "vois",
-	"version": "0.0.0",
+	"name": "voicss",
+	"version": "0.1.4",
 	"description": "⚡ Ultra-Light Compile-Time CSS-in-TS",
 	"author": "kh4f",
 	"license": "MIT",
-	"repository": "https://github.com/kh4f/vois",
-	"homepage": "https://github.com/kh4f/vois",
-	"bugs": "https://github.com/kh4f/vois/issues",
+	"repository": "https://github.com/kh4f/voicss",
+	"homepage": "https://github.com/kh4f/voicss",
+	"bugs": "https://github.com/kh4f/voicss/issues",
 	"keywords": ["css-in-ts", "compile-time-css", "zero-runtime-css", "vite-plugin", "next-plugin"],
 	"files": ["dist", "README.md"],
 	"exports": {

@@ -1,6 +1,6 @@
-# Vois VS Code
+# Voicss VS Code
 
-A VS Code extension that adds **native CSS features to Vois CSS blocks**
+A VS Code extension that adds **native CSS features to Voicss CSS blocks**
 
 ## 🔥 Features
 

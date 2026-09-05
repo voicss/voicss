@@ -3,12 +3,12 @@ import MagicString from 'magic-string'
 import { extractCss } from './'
 
 const CSS_EXTRACTABLE_FILES = /\.(ts|tsx)$/
-const VIRTUAL_PREFIX = 'virtual:vois/'
+const VIRTUAL_PREFIX = 'virtual:voicss/'
 const RESOLVED_PREFIX = `\0${VIRTUAL_PREFIX}`
 const styles = new Map<string, string>()
 
 export default (): Plugin => ({
-	name: 'vois-vite',
+	name: 'voicss-vite',
 	enforce: 'pre',
 
 	resolveId(id) {

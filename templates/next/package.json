@@ -1,6 +1,6 @@
 {
-	"name": "vois-next",
-	"description": "🧩 Vois × Next.js Template",
+	"name": "voicss-next",
+	"description": "🧩 Voicss × Next.js Template",
 	"type": "module",
 	"scripts": {
 		"dev": "next",
@@ -24,7 +24,7 @@
 		"eslint": "^10.9.1",
 		"eslint-plugin-react-hooks": "^7.1.1",
 		"typescript": "^6.0.3",
-		"vois": "workspace:*",
-		"vois-eslint": "workspace:*"
+		"voicss": "workspace:*",
+		"voicss-eslint": "workspace:*"
 	}
 }

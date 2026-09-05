@@ -4,9 +4,9 @@ import { createHash } from 'node:crypto'
 import type { NextConfig } from 'next'
 import { extractCss } from './'
 
-export const voisTurboRule: Required<Required<NextConfig>['turbopack']>['rules'] = {
+export const voicssTurboRule: Required<Required<NextConfig>['turbopack']>['rules'] = {
 	'*': {
-		loaders: ['vois/next'],
+		loaders: ['voicss/next'],
 		condition: { all: [{ not: 'foreign' }, { path: /\.(ts|tsx)$/ }] },
 	},
 }
@@ -16,7 +16,7 @@ export default function (this: { resourcePath: string }, source: string): string
 	if (!css) return source
 
 	const fileHash = createHash('md5').update(this.resourcePath).digest('hex')
-	const cacheDir = resolve('node_modules', '.vois')
+	const cacheDir = resolve('node_modules', '.voicss')
 	const cssFilePath = join(cacheDir, `${fileHash}.css`)
 
 	mkdirSync(cacheDir, { recursive: true })

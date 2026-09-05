@@ -4,7 +4,7 @@
 		"name": "Debug VS Code Extension",
 		"type": "extensionHost",
 		"request": "launch",
-		"preLaunchTask": "build vois-vscode",
-		"args": ["--extensionDevelopmentPath=${workspaceFolder}/packages/vois-vscode"]
+		"preLaunchTask": "build voicss-vscode",
+		"args": ["--extensionDevelopmentPath=${workspaceFolder}/packages/voicss-vscode"]
 	}]
 }

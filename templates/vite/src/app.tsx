@@ -1,5 +1,5 @@
 export default function App() {
-	return <h1 className='title'>Vois<br/>Vite</h1>
+	return <h1 className='title'>Voicss<br/>Vite</h1>
 }
 
 void `css
