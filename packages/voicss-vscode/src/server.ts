@@ -75,20 +75,20 @@ connection.onCompletion(params => {
 
 connection.onDocumentColor(params => {
 	const doc = documents.get(params.textDocument.uri)
-	if (!doc) return
+	if (!doc) return []
 
 	const snapshot = getSnapshot(doc)
-	if (!snapshot) return
+	if (!snapshot) return []
 
 	return cssLS.findDocumentColors(snapshot.document, snapshot.stylesheet)
 })
 
 connection.onColorPresentation(params => {
 	const doc = documents.get(params.textDocument.uri)
-	if (!doc) return
+	if (!doc) return []
 
 	const snapshot = getSnapshot(doc)
-	if (!snapshot || !containsRange(snapshot.blocks, doc, params.range)) return
+	if (!snapshot || !containsRange(snapshot.blocks, doc, params.range)) return []
 
 	return cssLS.getColorPresentations(
 		snapshot.document,
