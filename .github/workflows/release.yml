@@ -26,8 +26,15 @@ jobs:
       - run: bun run build
 
       - run: npm stage publish
+        if: env.PACKAGE != 'voicss-vscode'
         working-directory: packages/${{ env.PACKAGE }}
+
+      - run: bun vsce publish --no-dependencies
+        if: env.PACKAGE == 'voicss-vscode'
+        working-directory: packages/${{ env.PACKAGE }}
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
       - run: gh release create $TAG --title $TAG --draft
-        working-directory: packages/${{ env.PACKAGE }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
