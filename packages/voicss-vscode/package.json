@@ -2,17 +2,17 @@
 	"name": "voicss-vscode",
 	"displayName": "Voicss",
 	"version": "0.0.0",
-	"description": "💎 Native CSS Features for Voicss",
+	"description": "✨ Native CSS Features for Voicss",
 	"author": "kh4f",
 	"publisher": "kh4f",
 	"license": "MIT",
 	"repository": "https://github.com/kh4f/voicss-vscode",
 	"homepage": "https://github.com/kh4f/voicss-vscode",
 	"bugs": "https://github.com/kh4f/voicss-vscode/issues",
-	"keywords": ["voicss", "voicss-vscode", "css-in-ts"],
+	"keywords": ["voicss", "css-in-ts", "css-in-js", "typescript", "syntax-highlighting"],
 	"categories": ["Programming Languages", "Formatters", "Snippets", "Linters"],
 	"icon": "icon.png",
-	"galleryBanner": { "color": "#221816", "theme": "dark" },
+	"galleryBanner": { "color": "#271B19", "theme": "dark" },
 	"engines": { "vscode": ">=1.136.0" },
 	"files": ["package.json", "README.md", "LICENSE", "CHANGELOG.md", "dist", "syntaxes", "icon.png"],
 	"type": "module",
@@ -28,8 +28,7 @@
 	},
 	"scripts": {
 		"build": "tsdown",
-		"lint": "tsc && eslint",
-		"package": "bun build && vsce package"
+		"lint": "tsc && eslint"
 	},
 	"devDependencies": {
 		"@types/vscode": "^1.118.0",
