@@ -4,7 +4,7 @@ import { LanguageClient, TransportKind, type LanguageClientOptions, type ServerO
 
 let client: LanguageClient | undefined
 
-export const activate = (context: ExtensionContext) => {
+export function activate(context: ExtensionContext) {
 	const clientOptions: LanguageClientOptions = { documentSelector: ['typescript', 'typescriptreact'] }
 
 	const serverModule = context.asAbsolutePath(join('dist', 'server.mjs'))
@@ -17,4 +17,6 @@ export const activate = (context: ExtensionContext) => {
 	void client.start()
 }
 
-export const deactivate = () => client?.stop()
+export function deactivate() {
+	return client?.stop()
+}
